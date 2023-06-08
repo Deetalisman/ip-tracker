@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <p class="par-one">IP Address Tracker</p>
+
+ <form action="">
+  <input type="text" placeholder=" Search for any IP address or domain" id="input">
+  <button class="submit" type="submit"><img src="images/icon-arrow.svg" class="arrow"></button>
+ </form>
+ <div class="details">
+    <div class="detail">
+      <p class="det-par">IP ADDRESS</p>
+      <p class="ipaddress det-par2"></p>
+    </div>
+    <div class="detail">
+      <p class="det-par">LOCATION</p>
+      <p class="location det-par2"></p>
+    </div>
+    <div class="detail">
+      <p class="det-par">TIMEZONE</p>
+      <p class="timezone det-par2"></p>
+    </div>
+    <div class="detail">
+      <p class="det-par">ISP</p>
+      <p class="isp det-par2"></p>
+    </div>
+ </div>
+
+ <div id="map"></div>
+  
+
+  <script src="./leaflet.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

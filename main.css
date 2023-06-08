@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 64.2%;
+}
+:root{
+    --white:white;
+    --gray:gray;
+    --black:black;
+}
+body{
+    background-image: url(images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+.par-one{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 6rem;
+    color: var(--white);
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+}
+#input{
+    width: 35rem;
+    height: 3.8rem;
+    font-size: 1.2rem;
+    color: var(--gray);
+    padding-left: 1.1rem;
+    border: 0;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+.submit{
+    background-color: var(--black);
+    width: 4rem;
+    border-bottom-right-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    cursor: pointer;
+    border: 0;
+}
+.arrow{
+    margin: 1.15rem 50%;
+    transform: translateX(-50%);
+}
+.details{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem auto 0;
+    padding: 2rem 4rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0px 15px 10px -15px #111;
+    z-index: 2;
+    position: absolute;
+    top: 12rem;
+    left: 15%;
+}
+.detail{
+    font-size: 2rem;
+    margin: 0 2rem;
+    text-align: left;
+    position: relative;
+}
+.det-par{
+    color: var(--gray);
+}
+.det-par2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+.detail::after{
+    content: " ";
+    width: 0.2rem;
+    height: 100%;
+    position: absolute;
+    right: -5rem;
+    top: 0;
+    background-color: var(--gray);
+}
+.detail:last-child::after{
+  width: 0;
+}
+#map{
+    height: 59vh;
+    width: 100%;
+    z-index: 1;
+}
+@media screen and (max-width:1200px) {
+    .details{
+    padding: 2rem 2rem;
+    }
+    .detail{
+    width: 15%;
+    }
+  
+@media screen  and (max-width:1000px){
+    .details{
+        padding: 2rem 1rem;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .details{
+    padding: 2rem 1rem;
+    width: 80%;
+
+    }
+    .det-par{
+        font-size: 1rem;
+    }
+    .det-par2{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(images/pattern-bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    #input{
+        width: 75%;
+    }
+    .par-one{
+        margin-top: 2rem;
+    }
+    form{
+        margin-top: 2rem;
+        margin-bottom:15rem ;
+    }
+   .details{
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding: 0.2rem;
+    top: 8rem;
+    left: 10%;
+   }
+   .detail{
+        width: 100%;
+        text-align: center;
+    margin: 2rem auto;
+   }
+   .detail::after{
+    width: 0;
+   }
+   .det-par{
+    font-size: 1.5rem;
+    }
+    .det-par2{
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    #map{
+        height: 68vh;
+    }
+}
